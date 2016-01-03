@@ -37,10 +37,6 @@
 		"ext-zlib": "Needed for compression of embedded resources, such as fonts"
 	},
 
-	"autoload": {
-		"classmap": ["mpdf.php"]
-	},
-
 	"scripts": {
 		"post-install-cmd": [
 			"php -r \"chmod('./ttfontdata', 0777);\"",

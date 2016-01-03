@@ -81,6 +81,19 @@ $this->fonttrans = array(
  */
 
 $this->fontdata = array(
+        'ptsans' => array
+        (
+            'R' => 'PT_Sans-Web-Regular.ttf',
+            'B' => 'PT_Sans-Web-Bold.ttf',
+            'I' => 'PT_Sans-Web-Italic.ttf',
+            'BI' => 'PT_Sans-Web-BoldItalic.ttf',
+        ),
+        "opendyslexic" => array(
+            'R' => "OpenDyslexic-Regular.ttf",
+            'B' => "OpenDyslexic-Bold.ttf",
+            'I' => "OpenDyslexic-Italic.ttf",
+            'BI' => "OpenDyslexic-BoldItalic.ttf",
+	),
 	"dejavusanscondensed" => array(
 		'R' => "DejaVuSansCondensed.ttf",
 		'B' => "DejaVuSansCondensed-Bold.ttf",
