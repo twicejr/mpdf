@@ -81,6 +81,10 @@ $this->fonttrans = array(
  */
 
 $this->fontdata = array(
+        'eurostile' => array
+        (
+            'R' => 'eurostile.ttf',
+        ),
         'ptsans' => array
         (
             'R' => 'PT_Sans-Web-Regular.ttf',
