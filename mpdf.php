@@ -77,6 +77,10 @@ if (!defined('_MPDF_TEMP_PATH')) {
 	define("_MPDF_TEMP_PATH", _MPDF_PATH . 'tmp/');
 }
 
+if (!file_exists(_MPDF_TEMP_PATH)) {
+	mkdir(_MPDF_TEMP_PATH, 0775, true);
+}
+
 if (!defined('_MPDF_TTFONTPATH')) {
 	define('_MPDF_TTFONTPATH', _MPDF_PATH . 'ttfonts/');
 }
