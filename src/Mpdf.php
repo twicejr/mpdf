@@ -1572,6 +1572,15 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 				$constructor[$key] = $config[$key];
 			}
 		}
+        
+        //Numeric failback
+        $i = 0;
+		foreach ($constructor as $key => $val) {
+			if (isset($config[$i])) {
+				$constructor[$key] = $config[$i];
+			}
+            $i++;
+		}
 
 		return array_values($constructor);
 	}
