@@ -10897,21 +10897,7 @@ class Mpdf implements \Psr\Log\LoggerAwareInterface
 
 	private function getVersionString()
 	{
-		$return = self::VERSION;
-		$headFile = __DIR__ . '/../.git/HEAD';
-		if (file_exists($headFile)) {
-			$ref = file($headFile);
-			$path = explode('/', $ref[0], 3);
-			$branch = isset($path[2]) ? trim($path[2]) : '';
-			$revFile = __DIR__ . '/../.git/refs/heads/' . $branch;
-			if ($branch && file_exists($revFile)) {
-				$rev = file($revFile);
-				$rev = substr($rev[0], 0, 7);
-				$return .= ' (' . $rev . ')';
-			}
-		}
-
-		return $return;
+		return self::VERSION;
 	}
 
 	function _putinfo()
